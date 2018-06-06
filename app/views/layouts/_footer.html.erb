@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t "footer_text_the" %>
+    <%= link_to t("link_refer"), "http://www.railstutorial.org/" %>
+    <%= t "footer_text_by" %>
+    <%= link_to t("footer_text_author"), "http://www.michaelhartl.com/" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("footer_about_link"), about_path %></li>
+      <li><%= link_to t("footer_contact_link"), contact_path %></li>
+      <li><%= link_to t("footer_new_link"), "http://news.railstutorial.org/" %></li>
+    </ul>
+  </nav>
+</footer>
