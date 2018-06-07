@@ -15,6 +15,7 @@ gem "jbuilder", "~> 2.5"
 gem "rubocop", "~> 0.49.1", require: false
 gem "bcrypt", "3.1.12"
 gem "config"
+gem "jquery-rails"
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"
