@@ -1,3 +1,4 @@
 max_lenght_name: 50
 max_lenght_email: 255
 min_lenght_pass: 6
+picture_size: 80
