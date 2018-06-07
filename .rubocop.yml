@@ -234,7 +234,7 @@ Layout/EmptyLinesAroundModuleBody:
   SupportedStyles:
     - no_empty_lines
 
-Naming/FileName:
+Style/FileName:
   Exclude:
     - '**/Rakefile'
     - '**/Gemfile'
@@ -332,7 +332,7 @@ Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 10
 
-Naming/MethodName:
+Style/MethodName:
   EnforcedStyle: snake_case
   SupportedStyles:
     - snake_case
@@ -361,7 +361,7 @@ Style/PercentLiteralDelimiters:
     '%W': ()
     '%x': ()
 
-Naming/PredicateName:
+Style/PredicateName:
   NamePrefixBlacklist:
     - get_
 
@@ -490,7 +490,7 @@ Style/TrivialAccessors:
     - to_s
     - to_sym
 
-Naming/VariableName:
+Style/VariableName:
   EnforcedStyle: snake_case
   SupportedStyles:
     - snake_case
