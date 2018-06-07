@@ -12,6 +12,8 @@ en:
   link_refer: "Ruby on Rails Tutorial"
   footer_text_by: "by"
   footer_text_author: "Michael Hartl"
+  error_contain_form: "The form contains "
+  error_text: "error"
   static_pages:
     home:
       title: "Home"
@@ -50,5 +52,13 @@ en:
     new:
       title: "Sign up"
       header: "Sign up"
-      new_content: "This will be a signup page for new users."
+      label_name: "Name"
+      label_email: "Email"
+      label_pass: "Password"
+      label_pass_confirm: "Confirmation"
+      butt_create: "Create my account"
+    show:
+      title: "User page"
+    create:
+      flash_welcome: "Welcome to the Sample App!"
 
