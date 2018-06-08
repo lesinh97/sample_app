@@ -75,6 +75,7 @@ en:
       butt_submit: "Submit"
       label_warnig: "Sign up now!"
       text_askin_if_new: "New user?"
+      label_checkbox_remember: "Remember me on this computer"
     create:
       flash_danger: "Invalid email/password combination"
 
