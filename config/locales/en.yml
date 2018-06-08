@@ -5,6 +5,11 @@ en:
   header_help_link: "Help"
   header_login_link: "Log in"
   header_logo_link: "Sample app"
+  header_user_link: "Users"
+  header_account_dropdown: "Account"
+  header_logout_link: "Log out"
+  header_profile_link: "Profile"
+  header_setting_link: "Settings"
   footer_about_link: "About"
   footer_contact_link: "Contact"
   footer_new_link: "News"
@@ -61,4 +66,15 @@ en:
       title: "User page"
     create:
       flash_welcome: "Welcome to the Sample App!"
+  sessions:
+    new:
+      title: "Log in"
+      header: "Log in"
+      label_email: "Email"
+      label_pass: "Password"
+      butt_submit: "Submit"
+      label_warnig: "Sign up now!"
+      text_askin_if_new: "New user?"
+    create:
+      flash_danger: "Invalid email/password combination"
 
