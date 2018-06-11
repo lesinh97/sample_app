@@ -19,6 +19,14 @@ en:
   footer_text_author: "Michael Hartl"
   error_contain_form: "The form contains "
   error_text: "error"
+  label_name: "Name"
+  label_email: "Email"
+  label_pass: "Password"
+  label_pass_confirm: "Confirmation"
+  flash_not_login: "Please log in."
+  label_delete: "Delete"
+  confirm_delete_user: "You sure?"
+  user_nil: "There are no user"
   static_pages:
     home:
       title: "Home"
@@ -54,18 +62,27 @@ en:
       contact_content: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_link: "contact page"
   users:
+    index:
+      title: "All users"
+      header: "All users"
     new:
       title: "Sign up"
       header: "Sign up"
-      label_name: "Name"
-      label_email: "Email"
-      label_pass: "Password"
-      label_pass_confirm: "Confirmation"
-      butt_create: "Create my account"
+      butt_text: "Create my account"
     show:
       title: "User page"
     create:
       flash_welcome: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      header: "Update your profile"
+      butt_text: "Save changes"
+      link_gavatar: "Change"
+    update:
+      flash_update_success: "Profile updated"
+    destroy:
+      flash_destroy_success: "User delete!"
+      flash_destroy_failed: "Cant delete user"
   sessions:
     new:
       title: "Log in"
@@ -78,4 +95,5 @@ en:
       label_checkbox_remember: "Remember me on this computer"
     create:
       flash_danger: "Invalid email/password combination"
+
 

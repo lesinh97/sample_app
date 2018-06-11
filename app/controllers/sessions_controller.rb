@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   def checkin
     log_in @user
     params[:session][:remember_me] ? remember(@user) : forget(@user)
-    redirect_to @user
+    redirect_back_or @user
   end
 
   def invalid_checkin
