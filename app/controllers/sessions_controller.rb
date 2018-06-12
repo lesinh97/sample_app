@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   end
 
   def invalid_checkin
-    flash.now[:danger] = t ".flash_invalid_danger"
+    flash.now[:danger] = t "flash_invalid_danger"
     render :new
   end
 

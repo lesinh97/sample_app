@@ -28,7 +28,7 @@ en:
   flash_not_login: "Please log in."
   flash_actived: "Account activated!"
   flash_fail_actived: "Invalid activation link"
-  label_delete: "Delete"
+  label_delete: "| Delete"
   confirm_delete_user: "You sure?"
   user_nil: "There are no user"
   mail_subject_actived: "Account activation"

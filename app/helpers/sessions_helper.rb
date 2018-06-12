@@ -50,7 +50,7 @@ module SessionsHelper
     session[:forwarding_url] = request.original_url if request.get?
   end
 
-  def author_admin? current_user
-    current_user.admin? && !current_user?(@user)
+  def author_admin? user
+    current_user.admin? && !current_user?(user)
   end
 end
