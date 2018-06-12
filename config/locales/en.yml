@@ -21,20 +21,22 @@ en:
   error_contain_form: "The form contains "
   error_text: "error"
   label_name: "Name"
-  label_email: "Email"
+  label_email: "Email adress"
   label_pass: "Password"
   label_pass_confirm: "Confirmation"
   label_to_active_mail: "Welcome to the Sample App! Click on the link below to activate your account:"
   flash_not_login: "Please log in."
   flash_actived: "Account activated!"
   flash_fail_actived: "Invalid activation link"
-  label_delete: "Delete"
+  label_delete: "| Delete"
   confirm_delete_user: "You sure?"
   user_nil: "There are no user"
   mail_subject_actived: "Account activation"
   active_mail_info: "Please check your email to activate your account."
   flash_acc_not_actived: "Account not activated.
   Check your email for the activation link."
+  password_mail_reset: "Password reset"
+  flash_expire_pass_reset: "Password reset has expired."
   static_pages:
     home:
       title: "Home"
@@ -95,15 +97,26 @@ en:
     new:
       title: "Log in"
       header: "Log in"
-      label_email: "Email"
-      label_pass: "Password"
       butt_submit: "Submit"
       label_warnig: "Sign up now!"
       text_askin_if_new: "New user?"
       label_checkbox_remember: "Remember me on this computer"
+      forgot_pass: "(forgot password)"
     create:
       flash__invalid_danger: "Invalid email/password combination"
   account_activations:
-
-
-
+  password_resets:
+    new:
+      title: "Forgot Password"
+      header: "Forgot Password"
+      butt_submit: "Submit"
+    create:
+      sent_email: "Email sent with password reset instructions!"
+      not_found_email: "Email address not found!"
+    edit:
+      title: "Reset password"
+      header: "Reset password"
+      butt_submit: "Update password"
+    update:
+      not_empty_pass: "can't be empty"
+      flash_reset_success: "Password has been reset."

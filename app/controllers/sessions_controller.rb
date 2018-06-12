@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   def checkin
     if @user.activated?
       log_in @user
-      params[:session][:remember_me] ? remember(@user) : forget(@user)
+      params[:session][:remember_me] == Settings.checkbox_true ? remember(@user) : forget(@user)
       redirect_back_or @user
     else
       flash[:warning] = t "flash_acc_not_actived"
@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   end
 
   def invalid_checkin
-    flash.now[:danger] = t ".flash_invalid_danger"
+    flash.now[:danger] = t "flash_invalid_danger"
     render :new
   end
 
