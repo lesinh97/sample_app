@@ -1,5 +1,5 @@
 en:
-  hello: "Hello world"
+  hello: "Hi %{name} "
   main_title: "| Ruby on Rails Tutorial Sample App"
   header_home_link: "Home"
   header_help_link: "Help"
@@ -15,6 +15,7 @@ en:
   footer_new_link: "News"
   footer_text_the: "The"
   link_refer: "Ruby on Rails Tutorial"
+  link_to_active_mail: "Active"
   footer_text_by: "by"
   footer_text_author: "Michael Hartl"
   error_contain_form: "The form contains "
@@ -23,10 +24,17 @@ en:
   label_email: "Email"
   label_pass: "Password"
   label_pass_confirm: "Confirmation"
+  label_to_active_mail: "Welcome to the Sample App! Click on the link below to activate your account:"
   flash_not_login: "Please log in."
+  flash_actived: "Account activated!"
+  flash_fail_actived: "Invalid activation link"
   label_delete: "Delete"
   confirm_delete_user: "You sure?"
   user_nil: "There are no user"
+  mail_subject_actived: "Account activation"
+  active_mail_info: "Please check your email to activate your account."
+  flash_acc_not_actived: "Account not activated.
+  Check your email for the activation link."
   static_pages:
     home:
       title: "Home"
@@ -94,6 +102,8 @@ en:
       text_askin_if_new: "New user?"
       label_checkbox_remember: "Remember me on this computer"
     create:
-      flash_danger: "Invalid email/password combination"
+      flash__invalid_danger: "Invalid email/password combination"
+  account_activations:
+
 
 
