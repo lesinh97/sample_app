@@ -11,13 +11,18 @@ class SessionsController < ApplicationController
   end
 
   def checkin
-    log_in @user
-    params[:session][:remember_me] ? remember(@user) : forget(@user)
-    redirect_back_or @user
+    if @user.activated?
+      log_in @user
+      params[:session][:remember_me] ? remember(@user) : forget(@user)
+      redirect_back_or @user
+    else
+      flash[:warning] = t "flash_acc_not_actived"
+      redirect_to root_path
+    end
   end
 
   def invalid_checkin
-    flash.now[:danger] = t ".flash_danger"
+    flash.now[:danger] = t ".flash_invalid_danger"
     render :new
   end
 
