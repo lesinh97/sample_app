@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "password_resets/new"
   get "password_resets/edit"
   resources :password_resets, except: %i(index destroy show)
+  resources :microposts, only: %i(create destroy)
 end
 

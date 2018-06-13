@@ -4,7 +4,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
   before_action :load_user, except: %i(index new create)
 
-  def show; end
+  def show
+    load_user
+    @microposts = @user.microposts.odering.paginate page: params[:page],
+      per_page: Settings.item_per_page
+  end
 
   def edit; end
 

@@ -1,0 +1,12 @@
+<%= form_for @micropost do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <div class="field">
+    <%= f.text_area :content, placeholder: t("create_post_holder") %>
+  </div>
+  <%= f.submit t("butt_post_submit"), class: "btn btn-primary" %>
+  <span class="picture">
+    <%= f.file_field :picture, accept: t("accept_pic_format") %>
+  </span>
+<% end %>
+
+<%= javascript_include_tag "image_upload" %>

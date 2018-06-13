@@ -37,6 +37,14 @@ en:
   Check your email for the activation link."
   password_mail_reset: "Password reset"
   flash_expire_pass_reset: "Password reset has expired."
+  post_posted: "Posted "
+  ago: "ago"
+  link_owner_profile: "view my profile"
+  create_post_holder: "Compose new micropost..."
+  butt_post_submit: "Post"
+  picture_out_size: "should be less than 5MB"
+  pic_out_size_alert: "Maximum file size is 5MB. Please choose a smaller file."
+  accept_pic_format: "image/jpeg,image/gif,image/png"
   static_pages:
     home:
       title: "Home"
@@ -46,6 +54,7 @@ en:
       home_link_signup: "Sign up now!"
       home_logo: "Rails logo"
       link_refer: "Ruby on Rails Tutorial"
+      post_feed: "Micropost Feed"
     about:
       title: "About"
       header: "About"
@@ -81,6 +90,7 @@ en:
       butt_text: "Create my account"
     show:
       title: "User page"
+      micro_post: "Microposts (%{size})"
     create:
       flash_welcome: "Welcome to the Sample App!"
     edit:
@@ -120,3 +130,9 @@ en:
     update:
       not_empty_pass: "can't be empty"
       flash_reset_success: "Password has been reset."
+  microposts:
+    create:
+      flash_create_success: "Micropost created!"
+    destroy:
+      flash_destroy_success: "Micropost destroyed!"
+      flash_destroy_fail: "Micropost can't be destroyed!"
