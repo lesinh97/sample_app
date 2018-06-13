@@ -1,5 +1,5 @@
 <h1><%= t "header_logo_link" %></h1>
-<p><%= t("hello", name: user.name) %></p>
+<p><%= t "hello", name: @user.name %></p>
 <p><%= t "label_to_active_mail" %></p>
 <%= link_to t("link_to_active_mail"), edit_account_activation_url(@user.activation_token,
   email: @user.email) %>

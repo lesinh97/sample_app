@@ -45,6 +45,18 @@ en:
   picture_out_size: "should be less than 5MB"
   pic_out_size_alert: "Maximum file size is 5MB. Please choose a smaller file."
   accept_pic_format: "image/jpeg,image/gif,image/png"
+  follower: "follower"
+  following: "following"
+  micro_post_partial: "Microposts: (%{size})"
+  butt_follow: "Follow"
+  butt_unfollow: "Unfollow"
+  pass_reset_label: "Password reset"
+  pass_reset_content: "To reset your password click the link below:"
+  link_pass_reset: "Reset password!"
+  link_expire_warn: "This link will expire in two hours."
+  ignore_content: "If you did not request your password to be reset, please ignore this email and
+  your password will stay as it is."
+  flash_invalid_danger: "Invalid email/password combination"
   static_pages:
     home:
       title: "Home"
@@ -81,6 +93,8 @@ en:
       contact_content: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_link: "contact page"
   users:
+    following_label: "Following"
+    follower_label: "Followers"
     index:
       title: "All users"
       header: "All users"
@@ -113,7 +127,6 @@ en:
       label_checkbox_remember: "Remember me on this computer"
       forgot_pass: "(forgot password)"
     create:
-      flash__invalid_danger: "Invalid email/password combination"
   account_activations:
   password_resets:
     new:
