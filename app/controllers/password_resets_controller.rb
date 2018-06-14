@@ -39,7 +39,7 @@ class PasswordResetsController < ApplicationController
 
   def take_user
     @user = User.find_by email: params[:email]
-    invalid_user if @user.nil
+    invalid_user if @user.nil?
   end
 
   def valid_user

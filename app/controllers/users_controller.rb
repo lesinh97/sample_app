@@ -45,6 +45,25 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = t(".following_label")
+    load_follow true
+  end
+
+  def followers
+    @title = t(".follower_label")
+    load_follow false
+  end
+
+  def load_follow is_following
+    @user  = User.find_by id: params[:id]
+    @users = is_following ? @user.following.paginate(page: params[:page]) : @user.followers.paginate(page: params[:page])
+    render "show_follow"
+    return if @user && @users
+    flash.now[:danger] = t ".user_nil"
+    redirect_to root_path
+  end
+
   private
 
   def user_params
