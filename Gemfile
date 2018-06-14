@@ -17,7 +17,6 @@ gem "puma", "~> 3.7"
 gem "rails", "~> 5.1.6"
 gem "rubocop", "~> 0.49.1", require: false
 gem "sass-rails", "~> 5.0"
-gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 gem "will_paginate"
@@ -27,6 +26,7 @@ group :development, :test do
   gem "selenium-webdriver"
 end
 group :development do
+  gem "sqlite3"
   gem "web-console", ">= 3.3.0"
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "spring"
